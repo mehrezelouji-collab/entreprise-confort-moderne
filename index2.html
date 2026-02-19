@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Entreprise Confort Moderne</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* شريط التنقل */
+.navbar {
+  background-color: #111;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #00c3ff;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.navbar a:hover {
+  color: #00c3ff;
+}
+
+/* القسم الرئيسي */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+  url('https://images.unsplash.com/photo-1503387762-592deb58ef4e');
+  background-size: cover;
+  background-position: center;
+  color: blue;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  background-color: #00c3ff;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #008bb5;
+}
+
+.services {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.services h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #f9f9f9;
+  padding: 30px;
+  width: 280px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+  margin-bottom: 15px;
+  color: #00c3ff;
+}
+
+.testimonials {
+  background-color: #f4f4f4;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.testimonial-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  background-color: white;
+  padding: 25px;
+  width: 260px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.testimonial:hover {
+  transform: scale(1.05);
+}
+
+.testimonial h4 {
+  margin-top: 15px;
+  color: #00c3ff;
+}
+
+/* تصميم خاص بالهواتف */
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar div {
+    margin-top: 10px;
+  }
+
+  .hero {
+    padding: 80px 15px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .cards,
+  .testimonial-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card,
+  .testimonial {
+    width: 90%;
+  }
+
+}
+
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.contact h2 {
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+textarea {
+  resize: none;
+  height: 120px;
+}
+
+form button {
+  background-color: #00c3ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #008bb5;
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+  <div class="logo">Entreprise Confort Moderne</div>
+  <div>
+    <a href="#">Accueil</a>
+    <a href="#">Nos services</a>
+    <a href="#">Nous contacter</a>
+  </div>
+</div>
+
+<section class="contact">
+  <h2>Contactez nous</h2>
+
+
+<div class="hero">
+<section class="services">
+  <h2>Nos services</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>climatisation centralisee</h3>
+      <p>Installation et entretien professionnels de tous les systemesde climatisation</p>
+    </div>
+
+    <div class="card">
+      <h3>Travaux et realisation plomberie sanitaire moderne & chauffage centrale et par le sol</h3>
+      <p>Solutions integrees pour les travaux de plomberie residentielle et industrielle</p>
+    </div>
+
+    <div class="card">
+      <h3>Electricite genérale cablage des armoire de regulation</h3>
+      <p>Installation et maintenance des systemes electriques conformement aux normes de securité les plus strictes</p>
+    </div>
+
+  </div>
+</section>
+
+  <h1>Des solutions modernes pour un confort moderne</h1>
+  <p>Experience et qualite dans la fourniture des meilleurs services</p>
+  <button onclick="alert('Vous serez contacté(e) prochainement')">
+    Demandez un service des maintenant
+  </button>
+</div>
+
+<section class="testimonials">
+  <h2>avis de nos clients</h2>
+
+  <div class="testimonial-cards">
+
+    <div class="testimonial">
+      <p>"Service excellent et rapidité d'exécution 👍"</p>
+      <h4>- Ahmed</h4>
+    </div>
+
+    <div class="testimonial">
+      <p>"Une équipe professionnelle et un service très élégant"</p>
+      <h4>- Mouhamed hamadi Kooli</h4>
+    </div>
+
+    <div class="testimonial">
+      <p>"Je les recommande vivement haute qualité et prix raisonnables en adéquation avec la qualité"</p>
+      <h4>- Nadaa Ghozzi</h4>
+    </div>
+
+  </div>
+</section>
+
+<form>
+    <input type="text" placeholder="nom et prénom" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Écrivez votre message ici" required></textarea>
+    <button type="submit">Envoyez</button>
+  </form>
+</section>
+
+
+</body>
+</html>
