@@ -1,15 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-<meta charset="UTF-8">
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Entreprise Confort Moderne</title>
+<meta name="description" content="Entreprise Confort Moderne - خدمات التكييف والسباكة والكهرباء باحترافية في تونس.">
+<meta name="keywords" content="تكييف, سباكة, كهرباء, صيانة, تونس">
+<meta name="author" content="Entreprise Confort Moderne">
+<title>Entreprise Confort Moderne | خدمات التكييف والسباكة والكهرباء في تونس</title>
+
+
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f6f9;
 }
 
 /* شريط التنقل */
@@ -43,7 +55,7 @@ body {
   url('https://images.unsplash.com/photo-1503387762-592deb58ef4e');
   background-size: cover;
   background-position: center;
-  color: blue;
+  color: white;
   text-align: center;
   padding: 120px 20px;
 }
@@ -59,19 +71,22 @@ body {
 }
 
 button {
-  padding: 15px 30px;
+  padding: 15px 35px;
   font-size: 16px;
   border: none;
-  border-radius: 25px;
-  background-color: #00c3ff;
+  border-radius: 50px;
+  background: linear-gradient(45deg, #00c3ff, #0066ff);
   color: white;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.4s;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
 button:hover {
-  background-color: #008bb5;
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.3);
 }
+
 
 .services {
   padding: 60px 20px;
@@ -92,17 +107,17 @@ button:hover {
 }
 
 .card {
-  background-color: #f9f9f9;
+  background: white;
   padding: 30px;
   width: 280px;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  transition: 0.3s;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: 0.4s;
 }
 
 .card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  transform: translateY(-12px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
 
 .card h3 {
@@ -217,89 +232,141 @@ form button:hover {
   background-color: #008bb5;
 }
 
+.map {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f4f4f4;
+}
 
+.map-container iframe {
+  width: 100%;
+  max-width: 900px;
+  height: 400px;
+  border-radius: 15px;
+}
 
-</style>
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  font-size: 28px;
+  padding: 15px 18px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
 </head>
 
 <body>
 
+
 <div class="navbar">
   <div class="logo">Entreprise Confort Moderne</div>
   <div>
-    <a href="#">Accueil</a>
-    <a href="#">Nos services</a>
-    <a href="#">Nous contacter</a>
-  </div>
+     <a href="#hero">Accueil</a>
+     <a href="#services">Nos services</a>
+     <a href="#contact">Nous contacter</a>
+      </div>
 </div>
 
-<section class="contact">
-  <h2>Contactez nous</h2>
+<div class="hero" id="hero">
+  <h1>Des solutions modernes pour un confort moderne</h1>
+  <p>Expérience et qualité dans la fourniture des meilleurs services</p>
+  <button onclick="alert(&#39;Vous serez contacté(e) prochainement&#39;)">
+    Demandez un service dès maintenant
+  </button>
+</div>
 
-
-<div class="hero">
-<section class="services">
+<section class="services" id="services">
   <h2>Nos services</h2>
 
   <div class="cards">
 
-    <div class="card">
-      <h3>climatisation centralisee</h3>
-      <p>Installation et entretien professionnels de tous les systemesde climatisation</p>
+    <div class="card" data-aos="zoom-in">
+      <h3>Climatisation centralisée</h3>
+      <p>Installation et entretien professionnels de tous les systèmes de climatisation.</p>
     </div>
 
-    <div class="card">
-      <h3>Travaux et realisation plomberie sanitaire moderne & chauffage centrale et par le sol</h3>
-      <p>Solutions integrees pour les travaux de plomberie residentielle et industrielle</p>
+    <div class="card" data-aos="zoom-in">
+      <h3>Plomberie sanitaire & chauffage central</h3>
+      <p>Solutions intégrées pour les travaux résidentiels et industriels.</p>
     </div>
 
-    <div class="card">
-      <h3>Electricite genérale cablage des armoire de regulation</h3>
-      <p>Installation et maintenance des systemes electriques conformement aux normes de securité les plus strictes</p>
+    <div class="card" data-aos="zoom-in">
+      <h3>Électricité générale</h3>
+      <p>Installation et maintenance conformes aux normes de sécurité.</p>
     </div>
+
+  </div>
+</section>    </div>
 
   </div>
 </section>
 
-  <h1>Des solutions modernes pour un confort moderne</h1>
-  <p>Experience et qualite dans la fourniture des meilleurs services</p>
-  <button onclick="alert('Vous serez contacté(e) prochainement')">
-    Demandez un service des maintenant
-  </button>
-</div>
-
-<section class="testimonials">
-  <h2>avis de nos clients</h2>
-
+<section class="testimonials" data-aos="fade-right">
+  <h2>Avis de nos clients</h2>
   <div class="testimonial-cards">
 
-    <div class="testimonial">
-      <p>"Service excellent et rapidité d'exécution 👍"</p>
+    <div class="testimonial" data-aos="fade-up">
+      <p>"Service excellent et rapidité 👍"</p>
       <h4>- Ahmed</h4>
     </div>
 
-    <div class="testimonial">
-      <p>"Une équipe professionnelle et un service très élégant"</p>
-      <h4>- Mouhamed hamadi Kooli</h4>
+    <div class="testimonial" data-aos="fade-up">
+      <p>"Équipe professionnelle et travail soigné."</p>
+      <h4>- Mouhamed Hamadi Kooli</h4>
     </div>
 
-    <div class="testimonial">
-      <p>"Je les recommande vivement haute qualité et prix raisonnables en adéquation avec la qualité"</p>
+    <div class="testimonial" data-aos="fade-up">
+      <p>"Qualité élevée et prix raisonnables."</p>
       <h4>- Nadaa Ghozzi</h4>
     </div>
 
   </div>
 </section>
 
-<form>
-    <input type="text" placeholder="nom et prénom" required>
-    <input type="email" placeholder="Email" required>
-    <textarea placeholder="Écrivez votre message ici" required></textarea>
-    <button type="submit">Envoyez</button>
+<section class="contact" id="contact">
+  <h2>Contactez-nous</h2>
+
+  <form action="#" method="POST">
+    <input type="text" name="name" placeholder="Nom et prénom" required>
+<input type="email" name="email" placeholder="Email" required>
+<textarea name="message" placeholder="Écrivez votre message ici" required></textarea>
+    <button type="submit">Envoyer</button>
   </form>
 </section>
 
+<section class="map" data-aos="fade-left">
+  <h2>Notre localisation</h2>
+  <div class="map-container">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=..."
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+  </div>
+</section>
+
+ <footer>
+  <p>© 2026 Entreprise Confort Moderne - Tous droits réservés</p>
+</footer>
+
+<a href="https://wa.me/21655546639" class="whatsapp-float" target="_blank">
+   💬
+</a>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </body>
 </html>
-
